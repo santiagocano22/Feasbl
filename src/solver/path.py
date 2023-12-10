@@ -17,3 +17,9 @@ class Path:
         return ", ".join(str(position) for position in self.positions)
 
     # You can add your own class members here.
+    def add_position(self, position: Position) -> None:
+            self.positions.append(position)
+
+    def delete_last_position(self):
+        if self.positions:
+            self.positions.pop()

@@ -16,3 +16,5 @@ class Position:
         return f"({self.row}, {self.column})"
 
     # You can add your own class members here.
+    def __hash__(self) -> int:
+        return hash((self.row, self.column))
